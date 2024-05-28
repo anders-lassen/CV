@@ -13,10 +13,10 @@ export default function Page() {
                 <div>
                     {/* Title */}
                     <h1>Anders Rosenvinge Lassen</h1>
-                    <h3>Full stack Maestro: Looking for exciting projects... with a great motivation for developing new technologies!</h3>
+                    <h3>Full stack Maestro: Looking for new exciting projects.</h3>
                     {/* Profile text */}
                     <div className={styles.profiletext}>
-                        <p>Experienced, creative Developer with a knack for product and business development. Thrives on challenges and excels in independent work. Enjoys collaborative brainstorming and diving deep into details. Skilled in developing web technologies, API development and SaaS solutions. </p>
+                        <p>Experienced, creative Developer with a knack for product and business development. Thrives on challenges and excels in independent work. Enjoys collaborative brainstorming and diving deep into details. Skilled in developing web technologies, API development and SaaS solutions. </p><br />
                         <center><p>“I am Fueled by the thrill of development and driven to be a capital-S problemSolver.”</p></center>
                     </div>
                 </div>
@@ -121,9 +121,10 @@ export default function Page() {
                     <h4>About</h4>
                     <p>Personally I am outgoing, innovative and energetic. I have a proactive approach to projects and challenges, which is proven through my committed and independent work style.</p>
                     <p>Through my work and education I learned how to create good architectural principles, structured design patterns and sound business logic. I've put them to the test in my own projects, where I've had the freedom to explore and experiment. Whether it's tinkering with code, 3D arts or craft projects, I'm all about diving in headfirst and delivering results that go above and beyond.</p>
+                    <br />
                     <center><p>“... I'm fueled by the thrill of development— the more intricate the challenge, the more exhilarating it becomes!”</p></center>
                 </div>
-
+                <br />
                 {/* Contact */}
                 <div className={styles.contact}>
                     <h3>Anders Rosenvinge Lassen</h3>
