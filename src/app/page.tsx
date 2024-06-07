@@ -1,11 +1,15 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Skills from "./program-skills";
+import NavBar from "./navbar";
+import Loading from "./loading";
 
 // @refresh reset
 export default function Page() {
     debugger
     return (
         <main className={styles.main}>
+            <NavBar />
             <div className={styles.description}>
                 <div className={styles.center}>
                     <div id={styles.picture} className={styles.logo}></div>
@@ -23,22 +27,8 @@ export default function Page() {
                 {/* Skillset (Full width) */}
                 <div className={styles.grid}>
                     {/* Col1 - Programming skills */}
-                    <div className={styles.col}>
-                        <h4>Programming Skills:</h4>
-                        <ul className={`${styles.list} ${styles.list_disc}`}>
-                            <li>JavaScript / TypeScript</li>
-                            <li>Node.js</li>
-                            <li>RESTful API</li>
-                            <li>SQL / MySQL</li>
-                            <li>PHP</li>
-                            <li>Python</li>
-                            <li>GIT / GitHub / GitHub Actions</li>
-                            <li>Apache / Nginx</li>
-                            <li>HTML / CSS / SASS</li>
-                            <li>Website, Server & Database setup</li>
-                            <li>SaaS platform development</li>
-                        </ul>
-                    </div>
+                    <Skills />
+
                     {/* Col2 - Frameworks&Programs */}
                     <div className={styles.col}>
                         <h4>Frameworks & Programs</h4>
