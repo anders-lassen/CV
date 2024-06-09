@@ -32,6 +32,10 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --blue: lightblue;
+  --green: lightgreen;
+  --gray: lightgray;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -60,6 +64,32 @@
     --callout-border-rgb: 108, 108, 108;
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
+
+    --blue: darkblue;
+    --green: darkgreen;
+    --gray: darkgray;
+
+        --tile-green: #4caf50;
+        --tile-blue: #2196f3;
+        --tile-red: #f44336;
+        --tile-yellow: #ffeb3b;
+        --tile-purple: #9c27b0;
+        --tile-orange: #ff9800;
+        --tile-pink: #e91e63;
+        --tile-cyan: #00bcd4;
+        --tile-lime: #cddc39;
+        --tile-teal: #009688;
+        --tile-indigo: #3f51b5;
+        --tile-brown: #795548;
+        --tile-grey: #9e9e9e;
+        --tile-blue-grey: #607d8b;
+        --tile-deep-orange: #ff5722;
+        --tile-deep-purple: #673ab7;
+        --tile-light-blue: #03a9f4;
+        --tile-light-green: #8bc34a;
+        --tile-blue-grey: #607d8b;
+        --tile-deep-orange: #ff5722;
+        --tile-deep-purple: #673ab7;
   }
 }
 
@@ -85,6 +115,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.github {
+    width: 17px;
+    margin: 3px;
 }
 
 @media (prefers-color-scheme: dark) {

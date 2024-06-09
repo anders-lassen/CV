@@ -2,17 +2,20 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Skills from "./program-skills";
 import NavBar from "./navbar";
+import SVG from "./svg";
 import Loading from "./loading";
+import Contact from "./contact";
 
 // @refresh reset
 export default function Page() {
-    debugger
     return (
         <main className={styles.main}>
+            <SVG />
             <NavBar />
             <div className={styles.description}>
-                <div className={styles.center}>
+                <div className={styles.center} style={{ columnGap: "4rem"}}>
                     <div id={styles.picture} className={styles.logo}></div>
+                    <Contact />
                 </div>
                 <div>
                     {/* Title */}
@@ -110,18 +113,13 @@ export default function Page() {
                 <div className={styles.about}>
                     <h4>About</h4>
                     <p>Personally I am outgoing, innovative and energetic. I have a proactive approach to projects and challenges, which is proven through my committed and independent work style.</p>
-                    <p>Through my work and education I learned how to create good architectural principles, structured design patterns and sound business logic. I've put them to the test in my own projects, where I've had the freedom to explore and experiment. Whether it's tinkering with code, 3D arts or craft projects, I'm all about diving in headfirst and delivering results that go above and beyond.</p>
+                    <p>Through my work and education I learned how to create good architectural principles, structured design patterns and sound business logic. I&apos;ve put them to the test in my own projects, where I&apos;ve had the freedom to explore and experiment. Whether it&apos;s tinkering with code, 3D arts or craft projects, I&apos;m all about diving in headfirst and delivering results that go above and beyond.</p>
                     <br />
-                    <center><p>“... I'm fueled by the thrill of development— the more intricate the challenge, the more exhilarating it becomes!”</p></center>
+                    <center><p>“... I&apos;m fueled by the thrill of development— the more intricate the challenge, the more exhilarating it becomes!”</p></center>
                 </div>
                 <br />
                 {/* Contact */}
-                <div className={styles.contact}>
-                    <h3>Anders Rosenvinge Lassen</h3>
-                    <h4>+45 3031 3408</h4>
-                    <h4>Anders-lassen@outlook.dk</h4>
-                    <h4><a href="https://dk.linkedin.com/in/anders-rosenvinge-lassen" target="_blank">https://dk.linkedin.com/in/anders-rosenvinge-lassen</a></h4>
-                </div>
+                <Contact />
             </div>
         </main>
     );
