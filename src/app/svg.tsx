@@ -4,9 +4,10 @@ import styles from "./page.module.css";
 export default function SVG() {
     // Create 100 random dots with x,y ranging from -45 to 200
     let circles = [];
-    for (let i = 0; i < 200; i++) {
-        let x = Math.floor(Math.random() * 300) - 45;
-        let y = Math.floor(Math.random() * 300) - 45;
+
+    for (let i = 0; i < 300; i++) {
+        let x = Math.floor(Math.random() * 200) - 45;
+        let y = Math.floor(Math.random() * 200) - 45;
         circles.push(<circle key={i} cx={x} cy={y} r="0.1" fill={["var(--gray)", "var(--blue)", "var(--green)"][i % 3]} />);
     }
 

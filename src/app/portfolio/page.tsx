@@ -24,10 +24,15 @@ export default function Page() {
             image: "/img-p-1.jpg",
             link: "portfolio/projects/mystic-mirror"
         }, {
-            name: "iBeacon.dk ",
+            name: "iBeacon.dk",
             description: "This is a project that I did.",
             image: "/img-p-2.jpg",
             link: "portfolio/projects/ibeacon-dk"
+        }, {
+            name: "Bachelor Thesis",
+            description: "This project is my bachelor thesis.\r\n It's about developing a paymentsystem for electric cars.",
+            image: "/img-p-4.jpg",
+            link: "portfolio/projects/bachelor-thesis"
         }, {
             name: "Advent Of Code 2023",
             icon: <img src="/github-mark/github-mark-white.svg" className={styles.github} />,
@@ -74,12 +79,15 @@ export default function Page() {
             <SVG />
             <NavBar />
             <div id="info_text">
+                <p>&nbsp;</p>
                 <p>Here are some of my favorite projects, all in one place!</p>
                 <p>Feel free to explore them and reach out if you have any questions.</p>
+                <p>&nbsp;</p>
             </div>
             <div id={styles.grid}>
                 {project_html}
             </div>
+            <div className={styles.smallTopBanner} id={styles.smallTopBanner}><center>This page is under development...</center></div>
         </main>
     )
 }
